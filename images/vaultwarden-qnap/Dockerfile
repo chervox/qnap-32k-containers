@@ -11,9 +11,9 @@
 # Bump: update VW_VERSION + the web-vault tag pinned in upstream's
 # docker/Dockerfile.debian for that release.
 
-ARG VW_VERSION=1.36.0
+ARG VW_VERSION=1.37.5
 
-FROM --platform=linux/amd64 docker.io/vaultwarden/web-vault:v2026.4.1 AS web_vault
+FROM  FROM --platform=linux/amd64 docker.io/vaultwarden/web-vault:v2026.10.1 AS web_vault
 
 FROM --platform=$BUILDPLATFORM ubuntu:22.04 AS build
 ARG VW_VERSION
