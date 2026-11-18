@@ -13,7 +13,7 @@
 
 ARG VW_VERSION=1.37.5
 
-FROM  FROM --platform=linux/amd64 docker.io/vaultwarden/web-vault:v2026.10.1 AS web_vault
+FROM --platform=linux/amd64 docker.io/vaultwarden/web-vault:v2026.10.1 AS web_vault
 
 FROM --platform=$BUILDPLATFORM ubuntu:22.04 AS build
 ARG VW_VERSION
